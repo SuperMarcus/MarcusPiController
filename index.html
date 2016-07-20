@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>Home | Raspberry Pi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/overflow.css" />
+    <link rel="stylesheet" href="assets/css/skillbar.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header" class="alt">
+        <span class="logo"><img src="assets/css/images/raspberry_pi.svg" alt="" /></span>
+        <h1 id="header-title">Raspberry Pi</h1>
+        <p>Web Console</p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#brief" class="active">Brief</a></li>
+            <li><a href="#system">System</a></li>
+        </ul>
+    </nav>
+
+    <div class="overflow-background" style="display: none"></div>
+
+    <!-- Main -->
+    <div id="main">
+        <section id="brief" class="main special">
+            <header class="major" style="padding-top: 45px">
+                <h2>Brief</h2>
+            </header>
+            <ul class="statistics">
+                <li class="style1">
+                    <span class="icon fa-clock-o"></span>
+                    <strong id="statistic-up-time">0</strong> Hours
+                </li>
+                <li class="style2">
+                    <span class="icon fa-tasks"></span>
+                    <strong id="statistic-process">0</strong> Processes
+                </li>
+                <li class="style3">
+                    <span class="icon fa-desktop"></span>
+                    <strong id="statistic-memory-usage">0%</strong> Memory Usage
+                </li>
+                <li class="style4">
+                    <span class="icon fa-fire"></span>
+                    <strong id="statistic-board-temperature">0</strong> Temperature
+                </li>
+            </ul>
+        </section>
+
+        <section id="system" class="main special">
+            <header class="major" style="padding-top: 45px">
+                <h2>System Information</h2>
+            </header>
+            <ul class="actions">
+                <li><button id="show-processes-details-btn" class="button small">Processes Details</button></li>
+                <li><button id="show-memory-details-btn" class="button small">Memory Details</button></li>
+                <li><button id="show-uname-info-btn" class="button small">Uname Info</button></li>
+            </ul>
+            <p>Items above are some useful information of the running system, click the button to view details</p>
+        </section>
+
+        <section id="processes-details-flow" class="main special overflow-window" style="display: none">
+            <div class="overflow-content-wrapper">
+                <header class="major">
+                    <h2>Processes</h2>
+                </header>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr>
+                            <th>User</th>
+                            <th>PID</th>
+                            <th>CPU</th>
+                            <th>Memory</th>
+                            <th>Virtual Memory</th>
+                            <th>Resident Memory</th>
+                            <th>TTY</th>
+                            <th>Status</th>
+                            <th>StartUp Time</th>
+                            <th>Running Time</th>
+                            <th>Command</th>
+                        </tr></thead>
+                        <tbody id="processes-table-container"></tbody>
+                        <tfoot><tr>
+                            <td>Count:</td>
+                            <td id="processes-table-count">0</td>
+                        </tr></tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <footer class="overflow-footer">
+                <ul class="actions">
+                    <li><button id="hide-processes-details-btn" class="button small">Close</button></li>
+                </ul>
+            </footer>
+        </section>
+
+        <section id="memory-details-flow" class="main special overflow-window" style="display: none">
+            <div class="overflow-content-wrapper">
+                <header class="major">
+                    <h2>Memory</h2>
+                </header>
+
+                <div id="memory-details-container"></div>
+                <div id="memory-details-others-container"></div>
+            </div>
+
+            <footer class="overflow-footer">
+                <ul class="actions">
+                    <li><button id="hide-memory-details-btn" class="button small">Close</button></li>
+                </ul>
+            </footer>
+        </section>
+
+        <section id="uname-info-flow" class="main special overflow-window" style="display: none">
+            <div class="overflow-content-wrapper">
+                <header class="major">
+                    <h2>Uname Information</h2>
+                </header>
+                <p>Running command: <strong>uname -a</strong></p>
+                <div id="uname-info-container"><h3><i class='fa fa-circle-o-notch fa-spin fa-fw margin-bottom'></i> Loading...</h3></div>
+            </div>
+
+            <footer class="overflow-footer">
+                <ul class="actions">
+                    <li><button id="hide-uname-info-btn" class="button small">Close</button></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">&copy; <a href="https://github.com/SuperMarcus">Marcus Z.</a> Design: <a href="https://html5up.net">HTML5 UP</a>, <a href="https://github.com/SuperMarcus">Marcus Z.</a></p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/general.js"></script>
+<script src="assets/js/home.js"></script>
+
+</body>
+</html>
