@@ -1,7 +1,7 @@
 Web Console for Raspberry Pi
 ============================
 
-A simple web console for Raspberry Pi based on PHP and Javascript. LGPL licensed (The GNU Lesser General Public License, version 3.0 or any late versions).
+A simple web console for Raspberry Pi based on PHP and Javascript. LGPL licensed (The GNU Lesser General Public License, version 3.0 or any late versions). Theme by [HTML5Up](http://html5up.net)
 
 Prepare
 -------
